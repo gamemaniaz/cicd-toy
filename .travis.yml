@@ -1,0 +1,9 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t louis/cicd-toy -f Dockerfile.dev .
+
+script:
+  - docker run louis/cicd-toy npm run test -- --coverage
