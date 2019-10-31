@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-         Hi there! Yolo Mate 2
+         Hi there! Yolo Mate 2 (Feature branch)
         </p>
         <a
           className="App-link"
