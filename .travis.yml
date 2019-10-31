@@ -6,4 +6,4 @@ before_install:
   - docker build -t louis/cicd-toy -f Dockerfile.dev .
 
 script:
-  - docker run louis/cicd-toy npm run test -- --coverage
+  - docker run -e CI=true louis/cicd-toy npm run test
